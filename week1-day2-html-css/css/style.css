@@ -1,10 +1,31 @@
 <style>
 
-	h1 {
+	#title {
+		font-family:Arial;
 		font-size: 60px;
 		text-align: center;
 		background-color: blue;
 		color: white;
+	}
+
+	#myName {
+		font-family: Arial;
+		font-size: 40px;
+		text-align: left;
+		background-color: orange;
+		color: white;
+	}
+
+	#contactInfo {
+		font-family: Arial;
+		font-size: 40px;
+		text-align
+		background-color: orange;
+		color: white;
+	}
+
+	p {
+		font-family: Arial;
 	}
 
 </style>
