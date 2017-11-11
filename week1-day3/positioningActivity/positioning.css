@@ -1,0 +1,45 @@
+<style>
+
+	.title {
+		margin-left: 40px;
+		font-size: 40;
+	}
+
+	.topBox {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		width: 180px;
+		height: 80px;
+		background-color: green;
+	}
+
+	.firstParagraph {
+		margin-top: 60px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.box {
+		position: relative;
+		width: 400px;
+		height: 100px;
+		left: 100px;
+		background-color: blue;
+	}
+
+	.smallBox {
+		position: absolute;
+		top: 40px;
+		left: 220px;
+		width: 200px;
+		height: 60px;
+		background-color: red;
+	}
+
+	.secondParagraph {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+</style>
