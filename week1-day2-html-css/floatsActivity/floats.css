@@ -1,0 +1,99 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+}
+
+header {
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #ccc;
+}
+
+section {
+	background: #eee;
+}
+
+#left {
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	margin-right: 33%;
+  	margin-bottom: 20px;
+	color: #fff;
+	background: #666;
+}
+
+#middle {
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	margin-left: 33%;
+	margin-right: 33%;
+  	margin-bottom: 20px;
+	color: #fff;
+	background: #888;
+}
+
+#right {
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	margin-left: 66%;
+  	margin-bottom: 20px;
+	color: #fff;
+	background: #666;
+}
+
+#full {
+	clear:both;
+	overflow:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#division {
+	padding-left: 40%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background: #6ea3da;
+}
+
+aside {
+	padding-top: 20px;
+	padding-bottom: 160px;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 60%;
+	background: #fff;
+}
+
+footer {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #ccc;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear:both;
+}
