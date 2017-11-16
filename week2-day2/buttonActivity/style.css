@@ -1,0 +1,53 @@
+.pseudo {
+	color: green;
+}
+
+.pseudo:focus {
+	background-color: red;
+}
+
+.pseudo:hover {
+	background-color: blue;
+}
+
+.pseudo:active {
+	background-color: black;
+}
+
+.pseudo2 {
+	color: green;
+}
+
+.pseudo2:focus {
+	font-size: 40px;
+}
+
+.pseudo2:hover {
+	font-size: 100px;
+}
+
+.pseudo2:active {
+	font-family: Impact;
+	font-size: 400px;
+	color: red;
+}
+
+.pseudo3 {
+	color: green;
+}
+
+.pseudo3:focus {
+	font-size: 300px;
+}
+
+.pseudo3:hover {
+	font-family: Comic Sans;
+	color: pink;
+	font-size: 50px;
+}
+
+.pseudo3:active {
+	background-color: black;
+	color: yellow;
+	font-size: 300px;
+}
