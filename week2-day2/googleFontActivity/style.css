@@ -1,6 +1,4 @@
-<style>
-
-	.bodyText {
+.bodyText {
 		font-family: "Impact";
 		font-size: 40px;
 		font-weight: bold;
@@ -8,4 +6,10 @@
 		letter-spacing: 20px;
 	}
 
-</style>
+.bodyText2 {
+	font-family: "Gloria Hallelujah";
+	}
+
+.bodyText3 {
+	font-family: "Amatic SC";
+	}
