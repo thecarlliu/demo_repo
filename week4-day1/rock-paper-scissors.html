@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+
+    //Variables
+    var max = 3;
+    var min = 1;
+    var computersHand;
+    var usersHand;
+    var turns;
+    
+    //Starts a game of Rock, Paper, Scissors!
+    playGame();
+
+    //Asks the user how many turns they would like to play, then plays the chosen number of turns.
+    function playGame() {
+      turns = prompt("How many turns would you like to play?");
+      playTurns(turns);
+    }
+
+    //Plays the number of turns determined by the user.
+    function playTurns (t) {
+      for (i=0; i<t; i++) {
+        setHands();
+        decideResult(computersHand, usersHand);
+      }
+    }
+
+    //Decides the result based on what the user picked and what the computer picked for a hand.
+    function decideResult (c, u) {
+      if (c == 1) {
+        if (u.toLowerCase() == "rock") {
+        alert("I chose rock, it's a draw!");
+        }
+        else if (u.toLowerCase() == "paper") {
+          alert("I chose rock, you win!");
+        }
+        else if (u.toLowerCase() == "scissors") {
+          alert("I chose rock, you lose!");
+        }
+      }
+
+      if (c == 2) {
+        if (u.toLowerCase() == "rock") {
+        alert("I chose paper, you lose!");
+        }
+        else if (u.toLowerCase() == "paper") {
+          alert("I chose paper, it's a draw!");
+        }
+        else if (u.toLowerCase() == "scissors") {
+          alert("I chose paper, you win!");
+        }
+      }
+
+      if (c == 3) {
+        if (u.toLowerCase() == "rock") {
+        alert("I chose scissors, you win!");
+        }
+        else if (u.toLowerCase() == "paper") {
+          alert("I chose scissors, you lose!");
+        }
+        else if (u.toLowerCase() == "scissors") {
+          alert("I chose scissors, it's a draw!");
+        }
+      }
+    }
+
+    // Allows the user to choose what hand to play, and makes the computer choose a hand at random.
+    function setHands () {
+      usersHand = prompt("Rock, paper, scissors! What do you choose?");
+      computersHand = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    </script>
+
+  </body>
+
+</html>

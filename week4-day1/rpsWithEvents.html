@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="jumbotron">
+            <h2>
+              <span id="user-choice"><strong>R, p, or s? Choose one!</strong></span>
+              <br>
+              <span id="computer-choice"><strong></strong></span>
+              <br>
+              <span id="wins"><strong></strong></span>
+              <br>
+              <span id="losses"><strong></strong></span>
+              <br>
+              <span id="ties"><strong></strong></span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+    //Variables
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+    var max = 3;
+    var min = 1;
+    var computersHand;
+    var translatedHand;
+    
+   // Let's start by grabbing a reference to the <span> below.
+    var userChoice = document.getElementById("user-choice");
+    var computerChoice = document.getElementById("computer-choice");
+    var numWins = document.getElementById("wins");
+    var numLosses = document.getElementById("losses");
+    var numTies = document.getElementById("ties");
+
+    // Next, we give JavaScript a function to execute when onkeyup event fires.
+    document.onkeyup = function(event) {
+      updateScore();
+      userChoice.textContent = "You Chose: "+event.key;
+      computerChoice.textContent = "Computer Chose: "+translatedHand;
+      numWins.textContent = "Wins: "+wins;
+      numLosses.textContent = "Losses: "+losses;
+      numTies.textContent = "Ties: "+ties;
+    };
+    
+    //updates the score decided by the result of the user's input vs the computer
+    function updateScore () {
+      setHand();
+      decideResult (computersHand, event.key);
+      translate (computersHand);
+    }
+
+    //translates the computers hand 
+    function translate (v) {
+      console.log(v);
+      if (v == 1) {
+        translatedHand = " r";
+      }
+      else if (v == 2) {
+        translatedHand = " p";
+      }
+      else if (v == 3) {
+        translatedHand = " s";
+      }
+      console.log(translatedHand);
+    }
+
+    //Decides the result based on what the user picked and what the computer picked for a hand.
+    function decideResult (c, u) {
+      if (c == "1") {
+        if (u == "r") {
+          ties++;
+        }
+        else if (u == "p") {
+          wins++;
+        }
+        else if (u == "s") {
+          losses++;
+        }
+      }
+
+      if (c == "2") {
+        if (u == "r") {
+          losses++;
+        }
+        else if (u == "p") {
+          ties++;
+        }
+        else if (u == "s") {
+          wins++;
+        }
+      }
+
+      if (c == "3") {
+        if (u == "r") {
+          wins++;
+        }
+        else if (u == "p") {
+          losses++;
+        }
+        else if (u == "s") {
+          ties++;
+        }
+      }
+      console.log(computersHand);
+    }
+
+    // Allows the user to choose what hand to play, and makes the computer choose a hand at random.
+    function setHand () {
+      computersHand = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(computersHand);
+    }
+
+    </script>
+
+  </body>
+
+</html>
