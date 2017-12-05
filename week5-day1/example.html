@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var width = 100;
+		var height = 100;
+
+		var currentWidth;
+		var currentHeight;
+
+		normalize();
+		grow();
+		grow();
+		shrink();
+		normalize();
+
+		function normalize() {
+			currentWidth = width;
+			currentHeight = height;
+			console.log(currentWidth);
+			console.log(currentHeight);
+		}
+
+		function grow() {
+			currentWidth = currentWidth * 1.2;
+			currentHeight = currentHeight *1.2;
+			console.log(currentWidth);
+			console.log(currentHeight);
+		}
+
+		function shrink() {
+			currentWidth = currentWidth *.8;
+			currentHeight = currentHeight *.8;
+			console.log(currentWidth);
+			console.log(currentHeight);
+		}
+
+	</script>
+	
+</body>
+</html>
