@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">jQuery Calculator</h1>
+    <h3 class="text-center">Perform basic mathematic operations using the power of jQuery!</h3>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <!-- Calculator Panel -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Calculator</h3>
+                </div>
+
+                <div class="panel-body">
+                    <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
+                    <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
+                    <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
+                    <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
+                    <br><br>
+                    <button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
+                    <button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
+                    <button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
+                    <button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
+                    <br><br>
+                    <button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
+                    <button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
+                    <button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
+                    <button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
+                    <br><br>
+                    <button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
+                    <button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
+                    <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
+                    <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
+                    <br><br>
+                    <button id="button-clear" class="btn btn-default clear" value="clear"><h1>clear</h1></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Result Panel -->
+        <div class="col-lg-6">
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Result</h3>
+                </div>
+                <div class="panel-body">
+                    <h1 id="first-number"></h1>
+                    <h1 id="operator"></h1>
+                    <h1 id="second-number"></h1>
+                    <hr>
+                    <h1 id="result"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+// Your code here...
+
+//Variables
+var zero = $("#button-0");
+var one = $("#button-1");
+var two = $("#button-2");
+var three = $("#button-3");
+var four = $("#button-4");
+var five = $("#button-5");
+var six = $("#button-6");
+var seven = $("#button-7");
+var eight = $("#button-8");
+var nine = $("#button-9");
+
+var listNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var add = $("#button-plus");
+var minus = $("#button-minus");
+var times = $("#button-multiply");
+var divideBy = $("#button-divide");
+
+//Button-Click Functions
+zero.on("click", function() {
+    displayValue(zero.attr("value"));
+});
+one.on("click", function() {
+    displayValue(one.attr("value"));
+});
+two.on("click", function() {
+    displayValue(two.attr("value"));
+});
+three.on("click", function() {
+    displayValue(three.attr("value"));
+});
+four.on("click", function() {
+    displayValue(four.attr("value"));
+});
+five.on("click", function() {
+    displayValue(five.attr("value"));
+});
+six.on("click", function() {
+    displayValue(six.attr("value"));
+});
+seven.on("click", function() {
+    displayValue(seven.attr("value"));
+});
+eight.on("click", function() {
+    displayValue(eight.attr("value"));
+});
+nine.on("click", function() {
+    displayValue(nine.attr("value"));
+});
+
+function displayValue(value) {
+    if (doesContain(value, listNumbers)) {
+        if (operator != "") {
+            $("second-number").text(value);
+        }
+        else {
+            $("first-number").text(value);
+        }
+    }
+    else {
+        $("operator").text(value);
+    }
+}
+
+function doesContain(val, list) {
+    var a = 0;
+    for (i=0; i<list.length; i++) {
+        if (val != list[i]) {
+            a++;
+        }
+    }
+    if (a == list.length) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+
+
+
+
+});
+
+</script>
+
+</body>
+</html>
