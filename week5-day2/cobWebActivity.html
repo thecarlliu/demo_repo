@@ -55,34 +55,70 @@ console.log("I found my "+theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.item
 //    headphones it should give back otherBigWeb
 // HINT: you should use recursion
 
-function findItem (thing) {
-  for (i = 0; i< theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items.length; i++) {
-    if (theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items[i] == thing) {
-      console.log("tinyWeb");
+// function findItem (thing) {
+//   for (i = 0; i< theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items.length; i++) {
+//     if (theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items[i] == thing) {
+//       console.log("tinyWeb");
+//     }
+//   }
+//   if (theCobWeb.biggestWeb.biggerWeb.smallerWeb.item == thing) {
+//     console.log("smallerWeb");
+//   }
+//   for (i=0; i< theCobWeb.biggestWeb.biggerWeb.items.length; i++) {
+//       if (theCobWeb.biggestWeb.biggerWeb.items[i] == thing) {
+//         console.log("biggerWeb");
+//       }
+//   }
+//   if (theCobWeb.biggestWeb.otherBigWeb.item == thing) {
+//     console.log("otherBigWeb");
+//   }
+//   if (theCobWeb.biggestWeb.item == thing) {
+//     console.log("biggestWeb");
+//   }
+//   else {
+//     console.log("can't find it!");
+//   }
+// }
+
+// findItem("comb");
+// findItem("toenails");
+// findItem("headphones");
+
+checkWeb("comb", theCobWeb);
+
+function checkWeb (thing, web) {
+  console.log(checkObj(thing, web));
+}
+
+function checkObj (thing, location) {
+  for (var key in location) {
+    if (location.hasOwnProperty(key)) {
+      checkObj(thing, key);
     }
-  }
-  if (theCobWeb.biggestWeb.biggerWeb.smallerWeb.item == thing) {
-    console.log("smallerWeb");
-  }
-  for (i=0; i< theCobWeb.biggestWeb.biggerWeb.items.length; i++) {
-      if (theCobWeb.biggestWeb.biggerWeb.items[i] == thing) {
-        console.log("biggerWeb");
-      }
-  }
-  if (theCobWeb.biggestWeb.otherBigWeb.item == thing) {
-    console.log("otherBigWeb");
-  }
-  if (theCobWeb.biggestWeb.item == thing) {
-    console.log("biggestWeb");
-  }
-  else {
-    console.log("can't find it!");
+    else {
+      checkArray(thing, key);
+    }
   }
 }
 
-findItem("comb");
-findItem("toenails");
-findItem("headphones");
+function checkArray (thing, location) {
+  if (typeof(location) == Array) {
+    for (i=0; i<location.length; i++) {
+      if (location[i] = thing) {
+        return this.location;
+      }
+    }
+  }
+  else {
+    checkItem(thing, key);
+  }
+}
+
+function checkItem(thing, location) {
+  if (thing = location) {
+    return this.location;
+  }
+}
 
 </script>
 

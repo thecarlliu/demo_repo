@@ -134,15 +134,15 @@ nine.on("click", function() {
 
 function displayValue(value) {
     if (doesContain(value, listNumbers)) {
-        if (operator != "") {
-            $("second-number").text(value);
+        if ($("#operator").attr("value") != "") {
+            $("#second-number").text(value);
         }
         else {
-            $("first-number").text(value);
+            $("#first-number").text(value);
         }
     }
     else {
-        $("operator").text(value);
+        $("#operator").text(value);
     }
 }
 
