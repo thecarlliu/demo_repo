@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+	<title>FizzBuzz</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// fizzBuzz(3);
+	// fizzBuzz(25);
+	// fizzBuzz(15);
+	// fizzBuzz(7);
+	// fizzBuzz(99);
+	// fizzBuzz(195);
+	// fizzBuzz(205);
+	// fizzBuzz(3375);
+	// fizzBuzz(9001);
+
+	for (i=1; i<101; i++) {
+		fizzBuzz(i);
+	}
+
+	function fizzBuzz(num) {
+		if (num%3 == 0 && num%5 != 0) {
+				console.log("fizz");
+		}
+		else if (num%5 == 0 && num%3 != 0) {
+			console.log("buzz");
+		}
+		else if (num%3 == 0 && num%5 == 0) {
+			console.log("FizzBuzz");
+		}
+		else {
+			console.log(num);
+		}
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+	<title>FizzBuzz</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	for (i=0; i<1000; i++) {
+		checkPrime(i);
+	}
+
+	function checkPrime(num) {
+		var count = 0;
+		//if the number is less than 2, it is not prime
+		if (num < 2) {
+			console.log(num+" prime? FALSE");
+		}
+		//if the number is 2, it is prime
+		else if (num == 2) {
+			console.log(num+" prime? TRUE");
+		}
+		//for anything greater than 2,
+		//if you divide it by anything from 2 to itself besides itself, and it divides evenly,
+		//it's not a prime number!
+		else {
+			for (i=2; i<num; i++) {
+				if (num%i == 0) {
+					count++;
+				}
+			}
+			if (count > 0) {
+				console.log(num+" prime? FALSE");
+			}
+			//if it never divides evenly from 2 to itself, unless it divides by itself,
+			//then it is a prime number!
+			else if (count == 0) {
+				console.log(num+" prime? TRUE");
+			}
+		}
+	}
+
+</script>
+
+</body>
+</html>
