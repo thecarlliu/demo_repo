@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>NYT NewsSearch</title>
+
+    <link rel="stylesheet" href="../week7-day2/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+	<body>
+
+	    <div class= "container background">
+
+	    	<div class= "headerBG">
+				<h2>New York Times News Search</h2>
+			</div>
+			<div class= "searchBox">
+				<div class="form-group">
+				    <label for="searchTerm">Search Term</label>
+				    <input type = "text" class="form-control" id="searchTerm">
+				</div>
+				<div class="form-group">
+				    <label for="numberRecords">Number of Records to Retrieve</label>
+				    <select class="form-control" id="numberRecords">
+				      <option>1</option>
+				      <option>5</option>
+				      <option>10</option>
+				    </select>
+				</div>
+				<div class="form-group">
+					<label for="startYear">Start Year</label>
+					<input type = "text" class="form-control" id="startYear">
+				</div>
+				<div class="form-group">
+					<label for="endYear">End Year</label>
+					<input type = "text" class="form-control" id="endYear">
+				</div>
+
+				<button id= "search-button">Search</button>
+			</div>
+			<br>
+			<div id= "searchResults">
+				<p>Search Results</p>
+			</div>
+
+	    </div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script type="text/javascript">
+	    	var searchTerm;
+	    	var numberRecord;
+	    	var startYear;
+	    	var endYear;
+	    	console.log($("#searchTerm"));
+
+			$("#search-button").on("click", function() {
+				console.log($("#searchTerm").val());
+				//numberRecords consolelog
+				console.log($("#startYear").val());
+				console.log($("#endYear").val());
+
+				searchTerm = "&q?="+$("#searchTerm").val().trim();
+				numberRecord = "&?page="+0;
+				startYear = "&?begin_date="+$("#startYear").val()+"0101";
+				endYear = "&?end_date="+$("#endYear").val()+"0101";
+
+				var apiKey = "?api-key=4f8ec346b08244cfade45948e0c31dc8";
+	    		var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json"+apiKey+searchTerm+numberRecord+startYear+endYear;
+
+				$.ajax({
+			    	url: queryURL,
+			    	method: "GET"
+			    }).done(function(result) {
+			    	$("#searchResults").empty();
+			    	console.log(result);
+			    	for (i=0; i<10; i++) {
+			    		var articleDisplay = $("<div>");
+			    		console.log(result.response.docs[i].headline.main);
+				    	articleDisplay.text(result.response.docs[i].headline.main);
+				    	$("#searchResults").append(articleDisplay);
+			    	}
+			    	console.log(articleDisplay);
+		    	}).fail(function(err) {
+				  throw err;
+				});
+			})
+
+	    </script>
+
+	</body>
+
+</html>
