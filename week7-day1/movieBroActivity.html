@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Movie Search</h1>
+
+    <!-- We'll be dumping our JSON contents in here -->
+    <div id="movie-view"></div>
+    <div id="movies-view"></div>
+    <div id="movie-poster"></div>
+
+    <!-- This form will be where users input data about the movies -->
+    <form id="movie-form">
+      <label for="movie-input">Search for a movie</label>
+      <input type="text" id="movie-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-movie" type="submit" value="Add a Movie Bro">
+
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-movie" type="submit" value="Movie Search">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // This .on("click") function will trigger the AJAX Call
+      $("#find-movie").on("click", function(event) {
+
+        // Preventing the submit button from trying to submit the form
+        // We're optionally using a form so the user may hit Enter to search instead of clicking the button
+        event.preventDefault();
+
+        // Here we grab the text from the input box
+        var movie = $("#movie-input").val();
+
+        // Here we construct our URL
+        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+
+        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
+        // and display it in the div with an id of movie-view
+
+        // YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE
+
+        // =================================================================
+
+        // CODE GOES HERE
+        // $.ajax({
+        //   url: queryURL,
+        //   method: "GET"
+        // }).done(function(response) {
+        //   console.log(response);
+        //   $("#movie-view").text(JSON.stringify(response));
+        // });
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          console.log(response);
+          var movieStuff = $("<div>");
+          var rating = $("<div>", {
+            text: "Rating: "+response.imdbRating
+          });
+          var year = $("<div>", {
+            text: "Year: "+response.Year
+          });
+          var plot = $("<div>", {
+            text: "Plot: "+response.Plot
+          });
+          var img = $("<img>", {
+            src: response.Poster
+          });
+          movieStuff.append(rating, year, plot, img);
+          $("#movie-poster").append(movieStuff);
+        });
+
+        // =================================================================
+      });
+
+      var movies = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+
+      function alertMovieName() {
+        var movieName = $(this).attr("movieName");
+        alert(movieName);
+      }
+
+      function displayMovieInfo() {
+        var movieName = $(this).attr("movieName");
+        var queryURL = "https://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          console.log(response);
+          var movieStuff = $("<div>");
+          var rating = $("<div>", {
+            text: "Rating: "+response.imdbRating
+          });
+          movieStuff.append(rating);
+          var year = $("<div>", {
+            text: "Year: "+response.Year
+          });
+          movieStuff.append(year);
+          var plot = $("<div>", {
+            text: "Plot: "+response.Plot
+          });
+          movieStuff.append(plot);
+          var img = $("<img>", {
+            src: response.Poster
+          });
+          movieStuff.append(img);
+          $("#movie-poster").append(movieStuff);
+        });
+      }
+
+      // Function for displaying movie data
+      function renderButtons() {
+
+        // Delete the content inside the movies-view div prior to adding new movies
+        // (this is necessary otherwise you will have repeat buttons)
+        $("#movies-view").empty();
+        // Loop through the array of movies, then generate buttons for each movie in the array
+        for (i=0; i<movies.length; i++) {
+          var movieBtn = $("<button>", {
+            movieName: movies[i],
+            text: movies[i],
+          });
+          movieBtn.addClass("movie");
+          $("#movies-view").append(movieBtn);
+        }
+      }
+
+      // This function handles events where the add movie button is clicked
+      $("#add-movie").on("click", function(event) {
+        // event.preventDefault() prevents submit button from trying to send a form.
+        // Using a submit button instead of a regular button allows the user to hit
+        // "Enter" instead of clicking the button if desired
+        event.preventDefault();
+
+        // Write code to grab the text the user types into the input field
+        // Write code to add the new movie into the movies array
+        var movie = $("#movie-input").val().trim();
+        movies.push(movie);
+        // The renderButtons function is called, rendering the list of movie buttons
+        renderButtons();
+      });
+
+      $(document).on("click", ".movie", displayMovieInfo);
+      $(document).on("click", ".movie", alertMovieName);
+      // Calling the renderButtons function to display the initial list of movies
+      renderButtons();
+
+    </script>
+  </div>
+</body>
+
+</html>
