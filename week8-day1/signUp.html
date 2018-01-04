@@ -97,14 +97,30 @@
       console.log(nameInput, emailInput, ageInput, commentInput);
 
       // Output all of the new information into the relevant HTML sections
-      $("#name-display").text(nameInput);
+      $("#name-display").text("Name: "+nameInput);
       $("#email-display").text("Email: "+emailInput);
       $("#age-display").text("Age: "+ageInput);
       $("#comment-display").text(commentInput);
 
       $(".form-control").val("");
 
+      // Clear localStorage
+      localStorage.clear();
+
+      // Store all content into localStorage
+      localStorage.setItem("name", nameInput);
+      localStorage.setItem("email", emailInput);
+      localStorage.setItem("age", ageInput);
+      localStorage.setItem("comment", commentInput);
+
     });
+
+    // By default display the content from localStorage
+    $("#name-display").text("Name: "+localStorage.getItem("name"));
+    $("#email-display").text("Email: "+localStorage.getItem("email"));
+    $("#age-display").text("Age: "+localStorage.getItem("age"));
+    $("#comment-display").text(localStorage.getItem("comment"));
+
   </script>
 
 </body>
