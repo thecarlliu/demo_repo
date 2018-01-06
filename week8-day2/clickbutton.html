@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Click Button with Firebase!</title>
+
+    <!-- -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- -->
+    <h1>Ouch! You've clicked me <span id="click-value"></span> times!</h1>
+
+    <!-- -->
+    <button id="click-button">Click Me!!!!</button>
+
+    <!-- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- ================================================================================== -->
+    <script>
+
+    var config = {
+      apiKey: "AIzaSyArDzzjKKjk3cV_b3ZkcqjYrj41mVN6bbQ",
+      authDomain: "test-project-51173.firebaseapp.com",
+      databaseURL: "https://test-project-51173.firebaseio.com",
+      projectId: "test-project-51173",
+      storageBucket: "test-project-51173.appspot.com",
+      messagingSenderId: "100168544247"
+    };
+
+    firebase.initializeApp(config);
+
+    // VARIABLES
+    // --------------------------------------------------------------------------------
+
+    var database = firebase.database();
+    var clickCounter = 0;
+
+    // FUNCTIONS + EVENTS
+    // --------------------------------------------------------------------------------
+
+    $("#click-button").on("click", function() {
+      clickCounter++;//increments clickCounter
+      database.ref().set({
+        clickCount: clickCounter//sets clickCount to value of clickCounter in our database.ref()
+      });
+    });
+
+    // MAIN PROCESS + INITIAL CODE
+    // --------------------------------------------------------------------------------
+
+    database.ref().on("value", function(snapshot) {
+      console.log(snapshot.val());
+      $("#click-value").text(snapshot.val().clickCount);//sets the click-value span element to the latest value of clickCount if clickCount is changed
+      clickCounter = snapshot.val().clickCount; //retrieves clickCount from database and sets clickCounter to that value
+    }, function(errorObject) {
+      console.log("The read failed: " + errorObject.code);//if something goes wrong do this
+    });
+
+    </script>
+
+  </body>
+
+</html>
