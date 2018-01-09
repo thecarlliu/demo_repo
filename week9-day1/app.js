@@ -1,13 +1,75 @@
+//_________________________________database stuff_______________________________
+var config = {
+	      apiKey: "AIzaSyArDzzjKKjk3cV_b3ZkcqjYrj41mVN6bbQ",
+	      authDomain: "test-project-51173.firebaseapp.com",
+	      databaseURL: "https://test-project-51173.firebaseio.com",
+	      projectId: "test-project-51173",
+	      storageBucket: "test-project-51173.appspot.com",
+	      messagingSenderId: "100168544247"
+	    };
+
+// Assign the reference to the database to a variable named 'database'
+//var database = ...
+firebase.initializeApp(config);
+var database = firebase.database();
+
+//_________________________________submitBtn stuff_____________________________
+var nameInput;
+var roleInput;
+var startDateInput;
+var monthlyRateInput;
+
+var inputList =[];
+
+var numMonthsWorked;
+var totalBilled;
+
+//retrieve unique ids and child values, then create employees using that data
+database.ref().on("child_added", function(childSnapshot) {
+	createEmployee(childSnapshot.val().name, childSnapshot.val().role, childSnapshot.val().startDate, childSnapshot.val().monthlyRate, inputList);
+	console.log(totalBilled);
+	//totalBilled appearing as NaN, and two copies of employee generated as submit btn is clicked, though the additional copy disappears, we know why this happens.
+});
 
 $("#submitBtn").on("click", function() {
-	var nameInput = $("#nameInput").val().trim();
-	var roleInput = $("#roleInput").val().trim();
-	var startDateInput = $("#startDateInput").val().trim();
-	var monthlyRateInput = $("#monthlyRateInput").val().trim();
-
-	var inputList = [nameInput, roleInput, startDateInput, monthlyRateInput];
+	nameInput = $("#nameInput").val().trim();
+	roleInput = $("#roleInput").val().trim();
+	startDateInput = $("#startDateInput").val().trim();
+	monthlyRateInput = $("#monthlyRateInput").val().trim();
 	
-	//calculate months worked
+	createEmployee(nameInput, roleInput, startDateInput, monthlyRateInput, inputList);
+
+	database.ref().push({
+		name: nameInput,
+		role: roleInput,
+		startDate: startDateInput,
+		monthlyRate: monthlyRateInput
+	});
+
+	$("#nameInput").val("");
+	$("#roleInput").val("");
+	$("#startDateInput").val("");
+	$("#monthlyRateInput").val("");
+});
+
+function createEmployee(name, role, startDate, monthlyRate, inputs) {
+	doTheMath(startDate);
+	//create row of info
+	inputs = [];
+	inputs.push(name, role, startDate, numMonthsWorked, monthlyRate, totalBilled);
+	var tRow = document.createElement("TR");
+	for (i=0;i<inputs.length;i++) {
+		var tItem = document.createElement("TD");
+		tItem.append(inputs[i]);
+		tRow.append(tItem);
+	}
+
+	var tBody = document.getElementById("tableBody");
+	tBody.append(tRow);
+}
+
+function doTheMath(startDateInput) {
+	//calculate months worked and total billed
 	var d = new Date();
 	var currentMonth = d.getMonth() + 1;
 	var currentYear = d.getYear()+1900;
@@ -20,74 +82,20 @@ $("#submitBtn").on("click", function() {
 		inputYear = "20"+inputYear;
 	}
 	var differenceMonth;
-	if (currentMonth < inputMonth) {
-		differenceMonth = 12 - (inputMonth-currentMonth);
+	if (currentMonth > inputMonth) {
+		differenceMonth = 12 - (currentMonth-inputMonth);
 	}
 	else {
 		differenceMonth = currentMonth - inputMonth;
 	}
-	var numMonthsWorked = (currentYear-inputYear)*12-(differenceMonth);
+	numMonthsWorked = (currentYear-inputYear)*12+(differenceMonth);
 	console.log(numMonthsWorked);
 
-	var totalBilled = monthlyRateInput * numMonthsWorked;
+	totalBilled = monthlyRateInput * numMonthsWorked;
+	console.log(totalBilled);
+}
 
-	//crreate row of info
-	var tRow = document.createElement("TR");
-	for (i=0;i<inputList.length;i++) {
-		var tItem = document.createElement("TD");
-		tItem.append(inputList[i]);
-		if (i == 3) {
-			var tItem2 = document.createElement("TD");
-			tItem2.append(numMonthsWorked);
-			tRow.append(tItem2);
-		}
-		tRow.append(tItem);
-	}
-	tRow.append(totalBilled);
-	
-	var tBody = document.getElementById("tableBody");
-	tBody.append(tRow);
-
-	$("#nameInput").val("");
-	$("#roleInput").val("");
-	$("#startDateInput").val("");
-	$("#monthlyRateInput").val("");
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//___________________________________CSS______________________________
 
 $(".jumbotron").css("background-color", "darkgreen");
 

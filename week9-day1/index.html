@@ -6,6 +6,8 @@
     <title>Employee Tracker</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 
 </head>
 
@@ -42,11 +44,11 @@
 			    <input type = "text" class="form-control" id="roleInput">
 			</div>
 			<div class="form-group">
-			    <label for="startDateInput">Start Date (Formate: MM/DD/YY)</label>
+			    <label for="startDateInput">Start Date (Format: MM/DD/YY)</label>
 			    <input type = "text" class="form-control" id="startDateInput">
 			</div>
 			<div class="form-group">
-			    <label for="monthlyRateInput">Hourly Rate</label>
+			    <label for="monthlyRateInput">Monthly Rate($)</label>
 			    <input type = "text" class="form-control" id="monthlyRateInput">
 			</div>
 			<button type="submit" id= "submitBtn" class="btn btn-primary">Submit</button>
