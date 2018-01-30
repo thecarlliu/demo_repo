@@ -13,7 +13,12 @@ var request = require("request");
 
 
 // Grab or assemble the movie name and store it in a variable called "movieName"
-var movieName = process.argv[2];
+var args = process.argv;
+var movieName = "";
+for (i=2; i<args.length; i++) {
+	movieName = movieName + args[i] + "+";
+}
+movieName.toLowerCase();
 // ...
 
 
