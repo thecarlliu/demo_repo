@@ -16,7 +16,12 @@ var request = require("request");
 var args = process.argv;
 var movieName = "";
 for (i=2; i<args.length; i++) {
-	movieName = movieName + args[i] + "+";
+	if (i!=args.length-1) {
+		movieName = movieName + args[i] + "+";
+	}
+	else {
+		movieName = movieName + args[i];
+	}
 }
 movieName.toLowerCase();
 // ...
