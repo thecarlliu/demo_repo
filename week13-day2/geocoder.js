@@ -1,21 +1,37 @@
-//takes a command line input, formats and then looks up geolocation data for the input given.
-//returns mass of data in a string.
+var inquirer = require("inquirer");
 
 var geocoder = require("geocoder");
-var input = process.argv;
-var string = [];
 
-for (i=2;i<input.length;i++) {
-    string.push(input[i]);
-}
+inquirer
+    .prompt([
+        // Here we create a basic text prompt.
+        {
+            type: "input",
+            message: "Where do you want to go?",
+            name: "location"
+        },
+        {
+            type: "confirm",
+            message: "Are you sure:",
+            name: "confirm",
+            default: true
+        }
+        ])
+    .then (function(inquirerResponse) {
+        if (inquirerResponse.confirm) {
+            var input = inquirerResponse.location;
+            var string = JSON.stringify(input);
 
-string = JSON.stringify(string);
+            geocoder.geocode(string, function (err, data) {
+                console.log("Here's info on your destination:\n"+JSON.stringify(data));
+            });
+        }
+        else {
+            console.log("Decide already!");
+        }
+    });
 
-geocoder.geocode(string, function (err, data) {
-    console.log(JSON.stringify(data));
-});
-
-//shortcut
+//version without inquirer
 //geocoder.geocode(process.argv.slice(2).join(" "), function (err, data) {
 //     console.log(JSON.stringify(data));
 // };
