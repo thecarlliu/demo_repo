@@ -46,7 +46,7 @@ inquirer
     .then(function(inquirerResponse) {
         // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
         if (inquirerResponse.confirm) {
-            console.log("\nFor you, life means: " + inquirerResponse.username);
+            console.log("\nFor you, life means: " + inquirerResponse.meaning);
             if (inquirerResponse.secret === "password") {
                 console.log("You got the password right!");
             }
