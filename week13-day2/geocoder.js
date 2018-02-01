@@ -1,3 +1,6 @@
+//takes a command line input, formats and then looks up geolocation data for the input given.
+//returns mass of data in a string.
+
 var geocoder = require("geocoder");
 var input = process.argv;
 var string = [];
@@ -11,3 +14,8 @@ string = JSON.stringify(string);
 geocoder.geocode(string, function (err, data) {
     console.log(JSON.stringify(data));
 });
+
+//shortcut
+// geocoder.geocode(process.argv.slice(2).join(" "), function (err, data) {
+//     console.log(JSON.stringify(data));
+// };
