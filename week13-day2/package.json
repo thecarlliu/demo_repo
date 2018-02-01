@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "geocoder": "^0.2.3",
+    "inquirer": "^5.0.1",
     "weather-js": "^2.0.0"
   }
 }
