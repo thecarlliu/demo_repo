@@ -16,6 +16,6 @@ geocoder.geocode(string, function (err, data) {
 });
 
 //shortcut
-// geocoder.geocode(process.argv.slice(2).join(" "), function (err, data) {
+//geocoder.geocode(process.argv.slice(2).join(" "), function (err, data) {
 //     console.log(JSON.stringify(data));
 // };
