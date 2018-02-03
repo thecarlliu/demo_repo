@@ -5,8 +5,13 @@ function character (name, profession, gender, age, strength, hp) {
     this.age = age;
     this.strength = strength;
     this.hp = hp;
+    this.stats = [this.name, this.profession, this.gender, this.age, this.strength, this.hp];
     this.printStats = function () {
-        console.log(this.name+"\n"+this.profession+"\n"+this.gender+"\n"+this.age+"\n"+this.strength+"\n"+this.hp+"\n");
+        console.log(this.name+"'s stats:\n");
+        for (i = 0; i < this.stats.length; i++) {
+            console.log(this.stats[i]);
+        }
+        console.log("\n");
     }
     this.isAlive = function() {
         if (this.hp > 0) {
