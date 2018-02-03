@@ -22,7 +22,7 @@ function character (name, profession, gender, age, strength, hp) {
         }
     };
     this.attack = function(enemy) {
-        enemy.hp = enemy.hp - this.strength;
+        enemy.hp -= this.strength;
         console.log(this.name+" dealt "+this.strength+" damage to "+enemy.name+"\n");
         enemy.checkHP();
     };
@@ -37,8 +37,8 @@ function character (name, profession, gender, age, strength, hp) {
     };
 }
 
-var ch1 = new character("Player1", "Knight", "Male", 30, 100, 400);
-var ch2 = new character("Player2", "Mage", "Female", 30, 110, 380);
+var ch1 = new character("Player1", "Knight", "Male", 30, 90, 400);
+var ch2 = new character("Player2", "Mage", "Female", 30, 100, 360);
 
 ch1.printStats();
 ch2.printStats();
