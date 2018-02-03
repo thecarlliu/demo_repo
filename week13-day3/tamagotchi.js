@@ -129,6 +129,9 @@ else if (pet === "Cat") {
     }
 }
 
+Dog.bored = true;
+Cat.bored = true;
+
 // function tamagotchiListener(pet, action) {
 //     pet = process.argv[2];
 //     action = process.argv[3];
