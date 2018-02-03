@@ -12,7 +12,7 @@ function character (name, profession, gender, age, strength, hp) {
             console.log(this.stats[i]);
         }
         console.log("\n");
-    }
+    };
     this.isAlive = function() {
         if (this.hp > 0) {
             console.log(this.name+" is alive!"+"\n");
@@ -20,17 +20,21 @@ function character (name, profession, gender, age, strength, hp) {
         else {
             console.log(this.name+" is not alive!"+"\n");
         }
-    }
+    };
     this.attack = function(enemy) {
         enemy.hp = enemy.hp - this.strength;
         console.log(this.name+" dealt "+this.strength+" damage to "+enemy.name+"\n");
-    }
+        enemy.checkHP();
+    };
     this.levelUp = function() {
         this.age++;
         this.strength += 5;
         this.hp += 25;
-        console.log("Your character leveled up!\nAge increased by 1\nStrength increased by 5\nHitpoints increased by 25")
-    }
+        console.log(this.name+" leveled up!\nAge increased by 1\nStrength increased by 5\nHit-points increased by 25")
+    };
+    this.checkHP = function() {
+        console.log(this.name+"'s hit-points left: "+this.hp+"\n");
+    };
 }
 
 var ch1 = new character("Player1", "Knight", "Male", 30, 100, 400);
