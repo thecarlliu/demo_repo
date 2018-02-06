@@ -8,6 +8,12 @@ function Programmer(name, position, age, favorite) {
     };
 }
 
-var carl = new Programmer("Carl Liu", "Student", "21", "Javascript");
+var carl = new Programmer("Carl Liu", "Student", 21, "JavaScript");
 
-carl.printInfo();
+//carl.printInfo();
+var j = 0;
+for (i=2; i<process.argv.length/4 + 1;i++) {
+    var programmer = new Programmer(process.argv[i+j], process.argv[i+j+1], process.argv[i+j+2], process.argv[i+j+3]);
+    programmer.printInfo();
+    j+=4;
+}
