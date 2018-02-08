@@ -26,7 +26,8 @@ function userSearch(name, location) {
 if (access === "user") {
     var input = new userSearch(name, location);
     input.getWeather();
-    fs.appendFile("log.txt", "Name: "+input.name+" Location: "+input.location+" Date: "+input.date+"\n", function(err) {
+    var text = "Name: "+input.name+" Location: "+input.location+" Date: "+input.date+"\n";
+    fs.appendFile("log.txt", text, function(err) {
         if (err) {
             return console.log(err);
         }
