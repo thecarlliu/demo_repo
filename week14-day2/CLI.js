@@ -2,13 +2,14 @@ var weatherAdmin = require("./weatherAdmin");
 
 var access = process.argv[2];
 var name = process.argv[3];
-var location = process.argv[4];
+var location = String(process.argv.splice(4));
+location = location.replace(",", " ");
 
 var myAdmin = new weatherAdmin();
 
-if (access === "user") {
+if (access === "admin") {
     myAdmin.getData();
 }
-else {
+else if (access === "user") {
     myAdmin.newUserSearch(name, location);
 }
