@@ -35,7 +35,7 @@ app.get("/", function(req, res) {
 app.get("/:characters", function(req, res) {
     var chosen = req.params.characters;
 
-    // What does this log?
+    // What does this log? //logs anything user types in the url after localhost:3000/
     console.log(chosen);
 
     res.end();
