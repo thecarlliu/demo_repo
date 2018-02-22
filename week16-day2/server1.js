@@ -56,6 +56,9 @@ app.get("/darthmaul", function(req, res) {
 // YOUR CODE GOES HERE
 //
 //
+app.get("/obiwan", function(req res) {
+    res.json(obiwan);
+});
 
 // Listener
 // ===========================================================
