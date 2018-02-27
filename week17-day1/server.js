@@ -25,7 +25,7 @@ app.get("/icecreams/:name?", function(req, res) {
 });
 
 app.get("/icecreams/", function(req, res) {
-    res.render("index", icecreams);
+    res.render("index", {index: icecreams});
 });
 
 app.listen(port);
