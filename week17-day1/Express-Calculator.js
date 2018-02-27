@@ -6,15 +6,12 @@ var app = express();
 
 // Routes
 // What routes do you need to have? Which ones are optional?
-// TODO Add your routes here
 app.get("/:operator?/:a?/:b?", function(req, res) {
 
-    // TODO parse out the variables from the request
     // Parameters are received from the URL
     var a = parseInt(req.params.a);
     var b = parseInt(req.params.b);
     var operation = req.params.operator;
-    // TODO make sure they're converted to integers (and not strings)
     // Parameters are converted to integers
 
     // Initialize the result variable to send later
