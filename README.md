@@ -1,2 +1,2 @@
 # demo_repo
-Demo For Class 2
+This repository contains all my work for the in-class activities/assignments from the UMN Coding Bootcamp.
