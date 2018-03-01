@@ -19,7 +19,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "day_planner_db"
+  database: "movie_planner_db"
 });
 
 connection.connect(function(err) {
@@ -33,31 +33,31 @@ connection.connect(function(err) {
 
 // Use Handlebars to render the main index.html page with the todos in it.
 app.get("/", function(req, res) {
-  connection.query("SELECT * FROM plans;", function(err, data) {
+  connection.query("SELECT * FROM movies;", function(err, data) {
     if (err) {
       return res.status(500).end();
     }
 
-    res.render("index", { plans: data });
+    res.render("index", { movies: data });
   });
 });
 
-// Create a new todo
-app.post("/todos", function(req, res) {
-  connection.query("INSERT INTO plans (plan) VALUES (?)", [req.body.plan], function(err, result) {
+// Create a new movie
+app.post("/movies", function(req, res) {
+  connection.query("INSERT INTO movies (movie) VALUES (?)", [req.body.movie], function(err, result) {
     if (err) {
       return res.status(500).end();
     }
 
-    // Send back the ID of the new todo
+    // Send back the ID of the new movie
     res.json({ id: result.insertId });
     console.log({ id: result.insertId });
   });
 });
 
-// Retrieve all todos
-app.get("/todos", function(req, res) {
-  connection.query("SELECT * FROM plans;", function(err, data) {
+// Retrieve all movies
+app.get("/movies", function(req, res) {
+  connection.query("SELECT * FROM movies;", function(err, data) {
     if (err) {
       return res.status(500).end();
     }
@@ -66,9 +66,9 @@ app.get("/todos", function(req, res) {
   });
 });
 
-// Update a todo
-app.put("/todos/:id", function(req, res) {
-  connection.query("UPDATE plans SET plan = ? WHERE id = ?", [req.body.plan, req.params.id], function(err, result) {
+// Update a movie
+app.put("/movies/:id", function(req, res) {
+  connection.query("UPDATE movies SET movie = ? WHERE id = ?", [req.body.movie, req.params.id], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server faliure
       return res.status(500).end();
@@ -82,9 +82,9 @@ app.put("/todos/:id", function(req, res) {
   });
 });
 
-// Delete a todo
-app.delete("/todos/:id", function(req, res) {
-  connection.query("DELETE FROM plans WHERE id = ?", [req.params.id], function(err, result) {
+// Delete a movie
+app.delete("/movies/:id", function(req, res) {
+  connection.query("DELETE FROM movies WHERE id = ?", [req.params.id], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server faliure
       return res.status(500).end();
