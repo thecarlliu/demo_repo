@@ -31,7 +31,9 @@ connection.connect(function(err) {
 });
 
 // Express and MySQL code should go here.
-
+app.get("/", function(req, res) {
+  res.sendFile("main");
+});
 app.listen(port, function() {
   console.log("Listening on PORT " + port);
 });
