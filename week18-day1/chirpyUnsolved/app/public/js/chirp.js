@@ -8,3 +8,10 @@
 
 
 // When user chirps
+$("#submit-btn").on("click", function() {
+    var chirpDisplay = $("#chirp-display");
+    var name = $("#name-input").val().trim();
+    var chirp = $("#chirp-input").val().trim();
+    chirpDisplay.append(name+"\n"+chirp+"\n");
+
+});
