@@ -6,6 +6,10 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var db = require("models");
+
+//Syncs models before we start the express server
+db.sequelize.sync();
 
 // Sets up the Express App
 // =============================================================
