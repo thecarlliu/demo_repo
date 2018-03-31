@@ -25,7 +25,7 @@ module.exports = function(app) {
   app.post("/api/todos", function(req, res) {
     // Write code here to create a new todo and save it to the database
     // and then res.json back the new todo to the user
-      if (req.body.text != "") {
+      if (req.body.text.trim() != "") {
           if (req.body.text.length < 20) {
               db.Todo.create({
                   text: req.body.text,
@@ -45,7 +45,7 @@ module.exports = function(app) {
       }
       else {
           db.Todo.create({
-              text: "YOU NEED TO TYPE SOMETHING FOR YOUR TODO",
+              text: "YOU NEED TO TYPE SOMETHING FOR YOUR TODO, DUMMY",
               complete: false
           }).then(function(results) {
               res.json(results);

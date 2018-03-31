@@ -7,7 +7,7 @@
 
 // grab the orm from the config
 // (remember: connection.js -> orm.js -> route file)
-
+var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
