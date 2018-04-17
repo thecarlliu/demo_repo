@@ -2,63 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a76509-2c16-4918-941f-f8872013ecb6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/public/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/DeleteBtn/DeleteBtn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/DeleteBtn/DeleteBtn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/DeleteBtn/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Form/FormBtn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Form/Input.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Form/TextArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Form/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Grid/Col.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Grid/Container.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Grid/Row.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Grid/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Jumbotron/Jumbotron.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Jumbotron/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/List/List.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/List/List.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/List/ListItem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/List/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Nav/Nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/components/Nav/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/Books/Books.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/Books/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/Detail/Detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/Detail/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/NoMatch/NoMatch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/pages/NoMatch/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/client/src/utils/API.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/controllers/booksController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/models/book.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/models/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/nodemon.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/routes/api/books.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/routes/api/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/scripts/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/scripts/seedDB.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/scripts/start-client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april11/mernpractice/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/NavTabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/PortfolioContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/pages/About.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/pages/Blog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/pages/Contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/components/pages/Home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/april9/reactpractice/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/demo_repo.iml" afterPath="$PROJECT_DIR$/.idea/demo_repo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo_repo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo_repo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,15 +17,13 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="example.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/april16/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="451">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -128,6 +73,11 @@
       </list>
     </option>
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="demo_repo/invalid/Python" />
+    </ignored-facets>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -144,67 +94,66 @@
     <handled-path value="$PROJECT_DIR$/week18-day2/part2/node_modules" />
     <handled-path value="$PROJECT_DIR$/week19-day3/node_modules" />
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/april11/mernpractice/client/package.json" />
+      <path value="$PROJECT_DIR$/april11/mernpractice/package.json" />
+      <path value="$PROJECT_DIR$/april2/ES2015/package.json" />
+      <path value="$PROJECT_DIR$/april2/classes/package.json" />
+      <path value="$PROJECT_DIR$/april4/helloReact/reactpractice/package.json" />
+      <path value="$PROJECT_DIR$/april7/reactpractice/package.json" />
+      <path value="$PROJECT_DIR$/april9/pupster/package.json" />
+      <path value="$PROJECT_DIR$/april9/reactpractice/package.json" />
+      <path value="$PROJECT_DIR$/march31/custom-methods/package.json" />
+      <path value="$PROJECT_DIR$/march31/populate-exercise/package.json" />
+      <path value="$PROJECT_DIR$/march31/scraping-with-mongoose/package.json" />
+      <path value="$PROJECT_DIR$/march31/user-schema/package.json" />
+      <path value="$PROJECT_DIR$/march31/warmup/package.json" />
+      <path value="$PROJECT_DIR$/week13-day2/package.json" />
+      <path value="$PROJECT_DIR$/week14-day1/package.json" />
+      <path value="$PROJECT_DIR$/week14-day2/package.json" />
+      <path value="$PROJECT_DIR$/week16-day2/package.json" />
+      <path value="$PROJECT_DIR$/week17-day1/package.json" />
+      <path value="$PROJECT_DIR$/week17-day2/movie-planner/package.json" />
+      <path value="$PROJECT_DIR$/week17-day2/warmup/package.json" />
+      <path value="$PROJECT_DIR$/week17-day2/wishes/package.json" />
+      <path value="$PROJECT_DIR$/week17-day3/Asynch/package.json" />
+      <path value="$PROJECT_DIR$/week17-day3/ormExample/package.json" />
+      <path value="$PROJECT_DIR$/week17-day3/partyDB/package.json" />
+      <path value="$PROJECT_DIR$/week17-day3/warmup/package.json" />
+      <path value="$PROJECT_DIR$/week18-day1/chirpyApp/package.json" />
+      <path value="$PROJECT_DIR$/week18-day1/chirpyUnsolved/package.json" />
+      <path value="$PROJECT_DIR$/week18-day1/sequelizeLibrary/package.json" />
+      <path value="$PROJECT_DIR$/week18-day1/starWarsSequelize/package.json" />
+      <path value="$PROJECT_DIR$/week18-day2/package.json" />
+      <path value="$PROJECT_DIR$/week18-day2/part2/package.json" />
+      <path value="$PROJECT_DIR$/week19-day3/package.json" />
+      <path value="$PROJECT_DIR$/weeklostcount-march-28/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1252" />
     <option name="height" value="782" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo_repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo_repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo_repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo_repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="april16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -231,9 +180,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -259,37 +205,39 @@
     <option name="totallyTimeSpent" value="30158000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1252" height="782" extended-state="0" />
+    <frame x="4" y="24" width="1252" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253857" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32485875" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="SciView" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,10 +252,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/april4/helloReact/reactpractice/public/index.html">
@@ -325,16 +269,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april4/helloReact/reactpractice/src/styles/Section.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april4/helloReact/reactpractice/src/components/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -349,7 +289,7 @@
     <entry file="file://$PROJECT_DIR$/april7/reactpractice/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -369,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/april7/reactpractice/src/components/FriendCard/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -393,23 +333,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april7/reactpractice/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april7/reactpractice/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april7/reactpractice/src/components/FriendCard/FriendCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -417,16 +353,12 @@
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/utils/API.js" />
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/SearchForm.js" />
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="120" lean-forward="false" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
+          <caret line="10" column="120" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
         </state>
       </provider>
     </entry>
@@ -434,123 +366,90 @@
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/OmdbContainer.js" />
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/MovieDetail.js" />
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/pages/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/pages/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="12" column="85" lean-forward="false" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/registerServiceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/logo.svg" />
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/components/About/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/reactpractice/src/components/PortfolioContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/components/About/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april9/pupster/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april11/mernpractice/models/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/april11/mernpractice/client/src/pages/Books/Books.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april11/mernpractice/client/src/pages/NoMatch/NoMatch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april11/mernpractice/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/april16/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="451">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
